@@ -4,7 +4,7 @@ Prometheus and Grafana.
 
 ## To Run
 1. `docker-compose up`
-2. Go to grafana: `http://localhost:3000`
+2. Go to grafana: http://localhost:3000
     - User/pass: admin/admin
 3. Add prometheus as a datasource
     - Settings -> Datasources -> Prometheus (should be installed by default)
