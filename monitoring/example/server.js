@@ -21,3 +21,13 @@ const port = 4000
 app.listen(port, () => {
     console.log(`Go to http://localhost:${port}/metrics to see metrics`)
 })
+
+process.on('SIGINT', () => {
+    // Needed for ctrl-c
+    process.exit()
+})
+
+process.on('SIGTERM', () => {
+    // Needed for ctrl-c in docker compose
+    process.exit()
+})
